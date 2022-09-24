@@ -1,0 +1,23 @@
+/**
+  |============================
+  | Блок 3
+  |============================
+*/
+
+// Base style
+.body {
+color: var(--primary-text-color);
+font-family: Roboto, sans-serif;
+}
+
+// Секції
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+// Центрування
+.header__container {
+display: flex;
+align-items: center;
+}

@@ -1,0 +1,52 @@
+/**
+  |============================
+  | Блок 24
+  |============================
+*/
+
+// Адреса Footer
+.address {
+margin-top: 20px;
+
+letter-spacing: 0.03em;
+font-family: Roboto, sans-serif;
+font-style: normal;
+font-size: 14px;
+line-height: 1.19;
+}
+
+.address__item {
+margin-top: 0;
+margin-bottom: 9px;
+
+&:last-child {
+margin-bottom: 0;
+}
+}
+
+.address__link-contacts {
+color: var(--accent-color-text-footer);
+
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+text-decoration: none;
+letter-spacing: 0.03em;
+font-size: 14px;
+line-height: 1.71;
+
+&:hover,
+&:focus {
+color: var(--accent-color);
+}
+}
+
+.address__link-contacts--light {
+color: var(--footer-text-color);
+
+&:hover,
+&:focus {
+color: var(--accent-color);
+}
+}

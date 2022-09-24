@@ -1,0 +1,55 @@
+/**
+  |============================
+  | Блок 22
+  |============================
+*/
+
+// Постійні клієнти
+.clients {
+--items: 6;
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.clients-title {
+margin-bottom: 50px;
+
+color: var(--title-text-color);
+
+letter-spacing: 0.03em;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+.clients__item {
+flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.clients__link {
+display: flex;
+align-items: center;
+justify-content: center;
+
+transition-property: color, border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+height: 92px;
+width: 170px;
+border: 1px solid rgba(175, 177, 184, 1);
+border-radius: 4px;
+color: var(--color-icon);
+
+&:hover,
+&:focus {
+color: var(--accent-color);
+border: 1px solid var(--accent-color);
+}
+}
+
+.clients__icon {
+fill: currentColor;
+}

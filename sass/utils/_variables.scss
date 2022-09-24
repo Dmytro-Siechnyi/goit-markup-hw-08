@@ -1,0 +1,40 @@
+/**
+  |============================
+  | Блок 1
+  |============================
+*/
+
+// Змінні
+:root {
+    /* текст */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-text-color: #000000;
+    --button-text-color: #ffffff;
+    --footer-text-color: #ffffff;
+    --accent-color-text-footer: rgba(255, 255, 255, 0.6);
+    --color-icon: #AFB1B8;
+    --bottom-madal: #000000;
+    /* фон */
+    --accent-color: #2196f3;
+    --background-color-page: #F5F5F5;
+    --secondary-background-color-pag: #F5F4FA;
+    --background-color-header: #ffffff;
+    --booton-activ-color: #188CE8;
+    --background-color-footer: #2F303A;
+    --background-color-hero: #C4C4C4;
+    --activ-color-projects: rgba(33, 150, 243, 0.9);
+    --activ-color-works: rgba(47, 48, 58, 0.8);
+    --border-bottom-modal: rgba(0, 0, 0, 0.1);
+    --backdrop-color: rgba(0, 0, 0, 0.2);
+    --backdrop-color-footer-network: rgba(255, 255, 255, 0.1);
+    /* рамка */
+    --color-border-projects: #eeeeee;
+    --border-color-footer: rgba(255, 255, 255, 0.3);
+    --border-color-modal: rgba(33, 33, 33, 0.2);
+    /* формули */
+    --items: 3;
+    --indent: 30px;
+    /* модальне вікно */
+    --placeholder-color-text: rgba(117, 117, 117, 0.5);
+}

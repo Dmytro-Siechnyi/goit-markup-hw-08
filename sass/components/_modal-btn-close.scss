@@ -1,0 +1,42 @@
+/**
+  |============================
+  | Блок 14
+  |============================
+*/
+
+// modal-btn-close
+.modal__btn-close {
+position: absolute;
+top: 8px;
+right: 8px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+transition-property: color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+padding: 6px;
+
+width: 30px;
+height: 30px;
+
+border-radius: 50%;
+border: 1px solid var(--border-bottom-modal);
+color: var(--bottom-madal);
+background-color: var(--background-color-header);
+
+cursor: pointer;
+
+&:hover, 
+&:focus {
+color: var(--accent-color);
+fill: var(--accent-color);
+}
+}
+
+.modal__close-icon {
+fill: currentColor;
+}

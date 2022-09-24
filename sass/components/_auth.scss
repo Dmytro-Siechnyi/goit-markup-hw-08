@@ -1,0 +1,53 @@
+/**
+  |============================
+  | Блок 9
+  |============================
+*/
+
+// Авторизація
+.auth {
+display: flex;
+justify-content: center;
+
+gap: 30px;
+}
+
+.auth__link {
+display: flex;
+align-items: center;
+justify-content: center;
+
+transition-property: color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+gap: 10px;
+padding-top: 32px;
+padding-bottom: 32px;
+
+color: var(--primary-text-color);
+
+letter-spacing: 0.02em;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+text-decoration: none;
+
+&:hover,
+&:focus {
+color: var(--accent-color);
+fill: var(--accent-color);
+}
+}
+
+.auth__mail-icon {
+width: 16px;
+height: 12px;
+fill: currentColor;
+}
+
+.auth__tel-icon {
+width: 10px;
+height: 16px;
+fill: currentColor;
+}

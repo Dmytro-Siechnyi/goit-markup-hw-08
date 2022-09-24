@@ -1,0 +1,45 @@
+/**
+  |============================
+  | Блок 18
+  |============================
+*/
+// Особливості
+.features {
+--items: 4;
+display: flex;
+gap: 30px;
+}
+
+.features__item {
+flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.features__box-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: var(--secondary-background-color-pag);
+border-radius: 4px;
+height: 120px;
+margin-bottom: 30px;
+}
+
+.features__title {
+margin-bottom: 10px;
+
+color: var(--title-text-color);
+
+letter-spacing: 0.03em;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+.features__text {
+color: var(--primary-text-color);
+
+letter-spacing: 0.03em;
+font-size: 14px;
+line-height: 1.71;
+}
