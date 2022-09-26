@@ -114,7 +114,7 @@ img {
   color: currentColor;
 }
 
-.section.no-padding {
+.section--no-padding-top {
   padding-top: 0;
 }
 
@@ -196,7 +196,8 @@ textarea {
   margin-right: auto;
 }
 
-.nav__item {
+.nav__link {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
@@ -212,16 +213,15 @@ textarea {
   line-height: 1.14;
   text-decoration: none;
 }
-.nav__item:hover, .nav__item:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
 
-.nav__item--current-color {
-  position: relative;
+.nav__link--current-color {
   color: var(--accent-color);
 }
-.nav__item--current-color::after {
+.nav__link--current-color::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -244,7 +244,7 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__item--current-color:hover::after {
+.nav__link--current-color:hover::after {
   -webkit-transform: scaleX(0.4);
           transform: scaleX(0.4);
 }
@@ -295,15 +295,9 @@ textarea {
   fill: var(--accent-color);
 }
 
-.auth__mail-icon {
+.auth__icon {
   width: 16px;
   height: 12px;
-  fill: currentColor;
-}
-
-.auth__tel-icon {
-  width: 10px;
-  height: 16px;
   fill: currentColor;
 }
 
@@ -313,10 +307,12 @@ textarea {
   |============================
 */
 /* Блок герой */
-.hero {
-  text-align: center;
+.hero__container {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   background-color: var(--background-color-hero);
   max-width: 1600px;
   height: 600px;
@@ -834,7 +830,7 @@ textarea {
   | Блок 19
   |============================
 */
-.work-title {
+.section__title {
   margin-bottom: 50px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
@@ -856,15 +852,6 @@ textarea {
   position: relative;
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
-
-.work__name {
-  color: var(--button-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .work__box {
@@ -892,13 +879,22 @@ textarea {
   background-color: var(--activ-color-works);
 }
 
+.work__text {
+  color: var(--button-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /**
   |============================
   | Блок 20
   |============================
 */
 /* Наша команда */
-.fon {
+.section--ather-background {
   background-color: var(--secondary-background-color-pag);
 }
 
@@ -910,7 +906,7 @@ textarea {
   gap: 30px;
 }
 
-.team-title {
+.section__title {
   margin-bottom: 50px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
@@ -938,7 +934,7 @@ textarea {
   text-align: center;
 }
 
-.team__name {
+.team__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
@@ -960,7 +956,7 @@ textarea {
   | Блок 21
   |============================
 */
-.network {
+.socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,7 +969,7 @@ textarea {
   gap: 10px;
 }
 
-.network__socials-link {
+.socials__link, .socials__link--color-invers, .socials__link--color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,7 +984,7 @@ textarea {
   border-radius: 50%;
 }
 
-.network__socials-link--color {
+.socials__link--color {
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
@@ -998,12 +994,12 @@ textarea {
   background-color: var(--background-color-header);
   color: var(--color-icon);
 }
-.network__socials-link--color:hover, .network__socials-link--color:focus {
+.socials__link--color:hover, .socials__link--color:focus {
   color: var(--button-text-color);
   background-color: var(--accent-color);
 }
 
-.network__socials-link--color-invers {
+.socials__link--color-invers {
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -1013,11 +1009,11 @@ textarea {
   background-color: var(--backdrop-color-footer-network);
   color: var(--button-text-color);
 }
-.network__socials-link--color-invers:hover, .network__socials-link--color-invers:focus {
+.socials__link--color-invers:hover, .socials__link--color-invers:focus {
   background-color: var(--accent-color);
 }
 
-.network__socials-icon {
+.socials__icon {
   fill: currentColor;
 }
 
