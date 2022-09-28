@@ -1226,7 +1226,13 @@ textarea {
 .footer__container {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .footer-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
