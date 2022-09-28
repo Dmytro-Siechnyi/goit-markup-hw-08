@@ -16,15 +16,22 @@
   text-align: center;
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
     text-align: left;
   }
 }
 
 .footer-tablet {
+  align-items: baseline;
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
     display: flex;
     align-items: baseline;
     margin-bottom: 60px;
     justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
