@@ -12,16 +12,16 @@
   --button-text-color: #ffffff;
   --footer-text-color: #ffffff;
   --accent-color-text-footer: rgba(255, 255, 255, 0.6);
-  --color-icon: #AFB1B8;
+  --color-icon: #afb1b8;
   --bottom-madal: #000000;
   /* фон */
   --accent-color: #2196f3;
-  --background-color-page: #F5F5F5;
-  --secondary-background-color-pag: #F5F4FA;
+  --background-color-page: #f5f5f5;
+  --secondary-background-color-pag: #f5f4fa;
   --background-color-header: #ffffff;
-  --booton-activ-color: #188CE8;
-  --background-color-footer: #2F303A;
-  --background-color-hero: #C4C4C4;
+  --booton-activ-color: #188ce8;
+  --background-color-footer: #2f303a;
+  --background-color-hero: #c4c4c4;
   --activ-color-projects: rgba(33, 150, 243, 0.9);
   --activ-color-works: rgba(47, 48, 58, 0.8);
   --border-bottom-modal: rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@
   --border-color-footer: rgba(255, 255, 255, 0.3);
   --border-color-modal: rgba(33, 33, 33, 0.2);
   /* формули */
-  --items: 3;
+  --items: 2;
   --indent: 30px;
   /* модальне вікно */
   --placeholder-color-text: rgba(117, 117, 117, 0.5);
@@ -67,6 +67,10 @@
   font-family: Roboto, sans-serif;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -324,7 +328,7 @@ textarea {
 */
 /* Блок герой */
 .hero__container {
-  width: 1600px;
+  max-width: 1600px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -340,17 +344,17 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .hero__container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -825,17 +829,37 @@ textarea {
   | Блок 18
   |============================
 */
-.features {
-  --items: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .features {
+    --items: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    --items: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .features__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 
 .features__box-icon {
@@ -862,6 +886,12 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__text {

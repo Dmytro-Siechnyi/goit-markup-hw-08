@@ -5,13 +5,29 @@
 */
 // Особливості
 .features {
-  --items: 4;
-  display: flex;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    --items: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .features__item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+  }
 }
 
 .features__box-icon {
@@ -35,6 +51,11 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .features__text {
   color: var(--primary-text-color);
