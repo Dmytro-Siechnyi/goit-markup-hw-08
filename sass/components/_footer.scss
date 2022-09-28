@@ -14,8 +14,16 @@
 
 .footer__container {
   text-align: center;
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
 }

@@ -5,6 +5,13 @@
 */
 
 // Адреса Footer
+
+.box-address {
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+
 .address {
   margin-top: 20px;
   margin-bottom: 60px;
