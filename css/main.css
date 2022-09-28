@@ -850,12 +850,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .features {
     --items: 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
@@ -981,16 +975,25 @@ textarea {
   background-color: var(--secondary-background-color-pag);
 }
 
-.team {
-  --items: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team {
+    --items: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    --items: 4;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -998,23 +1001,48 @@ textarea {
   line-height: 1.17;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
 
 .team__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-color-header);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    margin: 0;
+  }
+}
 
 .team__box-name {
-  width: 270px;
+  width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-bottom: 24px;
+  padding-left: 122px;
+  padding-right: 122px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team__box-name {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__box-name {
+    padding: 30px 32px;
+  }
 }
 
 .team__title {
