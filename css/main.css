@@ -1227,13 +1227,6 @@ textarea {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .footer__container {
-    padding-left: 76px;
-    padding-right: 89px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .footer-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1242,6 +1235,8 @@ textarea {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1250,12 +1245,6 @@ textarea {
   | Блок 24
   |============================
 */
-@media screen and (min-width: 768px) {
-  .box-address {
-    margin-right: auto;
-  }
-}
-
 .address {
   margin-top: 20px;
   margin-bottom: 60px;
