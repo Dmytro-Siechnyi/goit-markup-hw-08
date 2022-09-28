@@ -120,8 +120,15 @@ img {
   color: currentColor;
 }
 
-.section--no-padding-top {
-  padding-top: 0;
+@media screen and (max-width: 1199.5px) {
+  .section--no-padding-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    padding-top: 0;
+  }
 }
 
 label {

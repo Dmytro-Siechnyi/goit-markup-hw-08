@@ -35,7 +35,13 @@ img {
 }
 
 .section--no-padding-top {
-  padding-top: 0;
+  @media screen and (max-width: 1199.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 
 label {
