@@ -7,7 +7,16 @@
 // footer social network
 .box-footer-network {
   align-items: baseline;
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-left: 102px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 70px;
+  //   margin-bottom: 0;
+  // }
 }
 
 .footer-title-network {
