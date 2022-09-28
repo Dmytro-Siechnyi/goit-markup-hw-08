@@ -8,8 +8,8 @@
 .hero__button {
   display: inline-block;
 
-  min-width: 216px;
-  padding: 10px 32px;
+  min-width: 200px;
+  padding: 10px 24px;
 
   transition-property: background-color, box-shadow, cursor;
   transition-duration: 250ms;
@@ -31,5 +31,10 @@
     background-color: var(--booton-activ-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
   }
 }
