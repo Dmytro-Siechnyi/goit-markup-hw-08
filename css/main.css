@@ -1578,21 +1578,37 @@ textarea {
   | Блок 27 (ПОРТФОЛІО)
   |============================
 */
-.filter-item {
-  margin-top: 0;
-  margin-bottom: 50px;
+.filter-items {
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter-items {
+    width: 100%;
+    gap: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-items {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-item__btn {
-  margin-left: 0;
-  display: inline-block;
   padding: 6px 22px;
   min-width: 73px;
   border-radius: 4px;
