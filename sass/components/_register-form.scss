@@ -6,7 +6,7 @@
 
 // Оформлення форми
 .register {
-  min-width: 448px;
+  width: 100%;
   height: 100%;
   padding: 40px;
   margin-right: auto;
@@ -19,11 +19,15 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(30px / 20px);
   letter-spacing: 0.03em;
   text-align: center;
 
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23px / 20px);
+  }
 }
 
 .register__form-field {
@@ -49,11 +53,20 @@
   border-radius: 4px;
   outline: transparent;
 
-  font-size: 12px;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color-text);
+  text-align: left;
 
   &:focus,
   &:hover {
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14px / 12px);
   }
 
   &::placeholder {
@@ -63,11 +76,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: calc(16px / 14px);
     letter-spacing: 0.01em;
     color: var(--placeholder-color-text);
     text-align: left;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14px / 12px);
+    }
   }
 
   &:focus::placeholder {
@@ -95,7 +113,7 @@
 .register__name-form {
   display: block;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: calc(14px / 12px);
   letter-spacing: 0.01em;
 
   margin-bottom: 4px;
@@ -119,9 +137,15 @@
   border: 1px solid var(--border-color-modal);
   border-radius: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
   letter-spacing: 0.01em;
+  text-align: left;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14px / 12px);
+  }
 
   &:focus,
   &:hover {
@@ -129,9 +153,14 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: calc(16px / 14px);
     letter-spacing: 0.01em;
     color: var(--placeholder-color-text);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14px / 12px);
+    }
   }
 }
