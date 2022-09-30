@@ -1579,7 +1579,7 @@ textarea {
   |============================
 */
 .filter-items {
-  width: 400px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1610,7 +1610,7 @@ textarea {
 
 .filter-item__btn {
   padding: 6px 22px;
-  min-width: 73px;
+  min-width: 80px;
   border-radius: 4px;
   border: 1px solid transparent;
   color: var(--title-text-color);
