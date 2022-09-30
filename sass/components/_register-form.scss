@@ -11,6 +11,10 @@
   padding: 40px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 479.5px) {
+    padding: 20px;
+  }
 }
 
 .register__form-title {
