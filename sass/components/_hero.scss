@@ -29,25 +29,12 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     height: 600px;
 
     padding-top: 200px;
     padding-bottom: 200px;
   }
-
-  // @media screen and (min-width: 1600px) {
-  //   width: 1600px;
-  // }
 }
 
 .hero__title {
