@@ -1977,27 +1977,13 @@ textarea {
 @media screen and (max-width: 767.5px) {
   .box-menu-socils {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .box-menu-socils::after {
-    position: absolute;
-    left: 163px;
-    top: 10px;
-    content: "";
-    display: block;
-    width: 22px;
-    height: 1px;
-    border: 1px solid transparent;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    background: var(--border-color-modal);
-  }
-}
-
-@media screen and (max-width: 767.5px) {
-  .box-menu-socils__element {
-    position: relative;
-  }
-  .box-menu-socils__element::after {
     position: absolute;
     left: 265px;
     top: 10px;
@@ -2014,15 +2000,17 @@ textarea {
 
 @media screen and (max-width: 767.5px) {
   .mobile-socials {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     color: var(--accent-color);
     font-weight: 500;
     font-size: 18px;
@@ -2032,6 +2020,19 @@ textarea {
   .mobile-socials::after {
     position: absolute;
     left: 85px;
+    top: 10px;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1px;
+    border: 1px solid transparent;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background: var(--border-color-modal);
+  }
+  .mobile-socials::before {
+    position: absolute;
+    left: 163px;
     top: 10px;
     content: "";
     display: block;

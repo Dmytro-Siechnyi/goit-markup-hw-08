@@ -93,28 +93,8 @@
   @media screen and (max-width: 767.5px) {
     position: relative;
 
-    &::after {
-      position: absolute;
-      left: 163px;
-      top: 10px;
-
-      content: "";
-      display: block;
-      width: 22px;
-      height: 1px;
-
-      border: 1px solid transparent;
-
-      transform: rotate(90deg);
-
-      background: var(--border-color-modal);
-    }
-  }
-}
-
-.box-menu-socils__element {
-  @media screen and (max-width: 767.5px) {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
     &::after {
       position: absolute;
@@ -137,6 +117,9 @@
 
 .mobile-socials {
   @media screen and (max-width: 767.5px) {
+    display: flex;
+    flex-wrap: wrap;
+
     position: relative;
     display: flex;
     align-items: center;
@@ -152,6 +135,23 @@
     &::after {
       position: absolute;
       left: 85px;
+      top: 10px;
+
+      content: "";
+      display: block;
+      width: 22px;
+      height: 1px;
+
+      border: 1px solid transparent;
+
+      transform: rotate(90deg);
+
+      background: var(--border-color-modal);
+    }
+
+    &::before {
+      position: absolute;
+      left: 163px;
       top: 10px;
 
       content: "";
