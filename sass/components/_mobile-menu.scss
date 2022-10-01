@@ -21,6 +21,10 @@
       transform: translateX(0);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .mobile-menu {
@@ -30,6 +34,11 @@
 
     display: flex;
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
