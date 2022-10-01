@@ -409,6 +409,7 @@ textarea {
     width: 16px;
     height: 12px;
     fill: currentColor;
+    margin-right: 8px;
   }
 }
 
