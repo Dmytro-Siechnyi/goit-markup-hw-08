@@ -90,44 +90,48 @@
 }
 
 .box-menu-socils {
-  position: relative;
+  @media screen and (max-width: 767.5px) {
+    position: relative;
 
-  &::after {
-    position: absolute;
-    left: 163px;
-    top: 10px;
+    &::after {
+      position: absolute;
+      left: 163px;
+      top: 10px;
 
-    content: "";
-    display: block;
-    width: 22px;
-    height: 1px;
+      content: "";
+      display: block;
+      width: 22px;
+      height: 1px;
 
-    border: 1px solid transparent;
+      border: 1px solid transparent;
 
-    transform: rotate(90deg);
+      transform: rotate(90deg);
 
-    background: var(--border-color-modal);
+      background: var(--border-color-modal);
+    }
   }
 }
 
 .box-menu-socils__element {
-  position: relative;
+  @media screen and (max-width: 767.5px) {
+    position: relative;
 
-  &::after {
-    position: absolute;
-    left: 265px;
-    top: 10px;
+    &::after {
+      position: absolute;
+      left: 265px;
+      top: 10px;
 
-    content: "";
-    display: block;
-    width: 22px;
-    height: 1px;
+      content: "";
+      display: block;
+      width: 22px;
+      height: 1px;
 
-    border: 1px solid transparent;
+      border: 1px solid transparent;
 
-    transform: rotate(90deg);
+      transform: rotate(90deg);
 
-    background: var(--border-color-modal);
+      background: var(--border-color-modal);
+    }
   }
 }
 
