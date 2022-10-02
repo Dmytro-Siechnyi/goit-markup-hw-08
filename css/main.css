@@ -85,12 +85,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 60px;
-}
-@media screen and (min-width: 768px) {
-  .header__container {
-    min-height: 80px;
-  }
 }
 
 /**
@@ -202,6 +196,12 @@ textarea {
   font-size: 24px;
   line-height: 1.1666666667;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -345,10 +345,19 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -374,9 +383,9 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-transition-property: color, fill;
     transition-property: color, fill;
     -webkit-transition-duration: 250ms;
@@ -1903,6 +1912,15 @@ textarea {
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
