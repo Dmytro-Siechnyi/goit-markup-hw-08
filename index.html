@@ -415,45 +415,63 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="work__item">
-              <img
-                srcset="
-                  ./images/work/_lg-@1x.jpg 1x,
-                  ./images/work/_lg-@2x.jpg 2x
-                "
-                src="
-                  ./images/work/_lg-@1x.jpg"
-                alt="людина друкує на клавіатурі"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/_lg-@1x.jpg 1x,
+                    ./images/work/_lg-@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work-foto"
+                  src="./images/work/_lg-@1x.jpg"
+                  alt="робота за ноутбуком"
+                />
+              </picture>
               <div class="work__box">
                 <p class="work__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="work__item">
-              <img
-                srcset="
-                  ./images/work/img_lg-@1x.jpg 1x,
-                  ./images/work/img_lg-@2x.jpg 2x
-                "
-                src="
-                  ./images/work/img_lg-@1x.jpg"
-                alt="робота з смартфоном"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/img_lg-@1x.jpg 1x,
+                    ./images/work/img_lg-@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work-foto"
+                  src="./images/work/img_lg-@1x.jpg"
+                  alt="робота за телефоном"
+                />
+              </picture>
               <div class="work__box">
                 <p class="work__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="work__item">
-              <img
-                srcset="
-                  ./images/work/img_lg-@1x-1.jpg 1x,
-                  ./images/work/img_lg-@2x-1.jpg 2x
-                "
-                src="
-                  ./images/work/img_lg-@1x-1.jpg"
-                alt="робота над дизайном на планшеті"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/img_lg-@1x-1.jpg 1x,
+                    ./images/work/img_lg-@2x-1.jpg 2x
+                  "
+                />
+                <img
+                  class="work-foto"
+                  src="./images/work/img_lg-@1x-1.jpg"
+                  alt="робота за планшетом"
+                />
+              </picture>
               <div class="work__box">
                 <p class="work__text">Дизайнерські рішення</p>
               </div>
