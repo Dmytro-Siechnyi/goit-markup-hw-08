@@ -29,11 +29,14 @@
 
   letter-spacing: 0.03em;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc(33px / 28px);
   text-align: center;
 
   @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42px / 36px);
+
     margin-bottom: 50px;
   }
 }
@@ -51,10 +54,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
     );
+
     margin: 0;
   }
 }

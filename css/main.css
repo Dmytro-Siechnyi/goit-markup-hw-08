@@ -86,6 +86,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 /**
@@ -198,12 +204,6 @@ textarea {
   line-height: 1.1666666667;
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
-  .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -230,12 +230,6 @@ textarea {
 @media screen and (max-width: 767.5px) {
   .nav {
     margin-bottom: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -286,37 +280,35 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .nav__link--current-color {
-    color: var(--accent-color);
-  }
-  .nav__link--current-color::after {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 100ms;
-            transition-delay: 100ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav__link--current-color:hover::after {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
+.nav__link--current-color {
+  color: var(--accent-color);
+}
+.nav__link--current-color::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link--current-color:hover::after {
+  -webkit-transform: scaleX(0.4);
+          transform: scaleX(0.4);
 }
 
 /**
@@ -349,6 +341,7 @@ textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: auto;
     gap: 10px;
   }
 }
@@ -424,7 +417,7 @@ textarea {
   |============================
 */
 /* Блок герой */
-.hero__container {
+.hero {
   max-width: 1600px;
   height: 400px;
   padding-top: 118px;
@@ -440,37 +433,37 @@ textarea {
   background-color: var(--background-color-hero);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_ms-@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_ms-@2x.png");
   }
 }
 @media screen and (min-width: 481px) {
-  .hero__container {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_md-@1x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_md-@1x.png");
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_md-@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_md-@2x.png");
   }
 }
 @media screen and (min-width: 769px) {
-  .hero__container {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_lg-@1x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_lg-@1x.png");
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_lg-@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_lg-@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .hero {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -567,6 +560,7 @@ textarea {
   |============================
 */
 .modal {
+  position: relative;
   background-color: var(--background-color-header);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1053,10 +1047,14 @@ textarea {
 .features__item {
   margin-bottom: 30px;
 }
+.features__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    margin: 0;
   }
 }
 
@@ -1194,12 +1192,14 @@ textarea {
   color: var(--title-text-color);
   letter-spacing: 0.03em;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
     margin-bottom: 50px;
   }
 }
@@ -1213,6 +1213,9 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team__item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -1460,6 +1463,14 @@ textarea {
   | Блок 24
   |============================
 */
+.box-address {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .box-address {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .box-address {
     margin-right: 70px;
@@ -1469,7 +1480,6 @@ textarea {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -1943,6 +1953,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 100%;
+    margin-left: 90px;
     padding-top: 21px;
     padding-bottom: 21px;
   }

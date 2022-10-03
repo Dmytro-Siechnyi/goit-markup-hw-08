@@ -25,4 +25,8 @@
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }

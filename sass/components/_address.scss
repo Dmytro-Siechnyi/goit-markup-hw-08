@@ -7,6 +7,12 @@
 // Адреса Footer
 
 .box-address {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     width: 100%;
@@ -15,7 +21,6 @@
 
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
 
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
