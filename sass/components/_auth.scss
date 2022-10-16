@@ -1,0 +1,84 @@
+/**
+  |============================
+  | Блок 9
+  |============================
+*/
+
+// Авторизація
+.auth {
+  @media screen and (max-width: 767.5px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.auth__link {
+  @media screen and (max-width: 767.5px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40px / 34px);
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+
+    &.auth__link--mail {
+      font-size: 24px;
+      line-height: calc(28px / 24px);
+
+      color: var(--primary-text-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--primary-text-color);
+
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.auth__icon {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    fill: currentColor;
+    margin-right: 8px;
+  }
+}

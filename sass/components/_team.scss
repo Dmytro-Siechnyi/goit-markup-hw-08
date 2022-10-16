@@ -1,0 +1,107 @@
+/**
+  |============================
+  | Блок 20
+  |============================
+*/
+
+/* Наша команда */
+.section--ather-background {
+  background-color: var(--secondary-background-color-pag);
+}
+
+.team {
+  @media screen and (min-width: 768px) {
+    --items: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
+}
+
+.section__title {
+  margin-bottom: 30px;
+
+  color: var(--title-text-color);
+
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33px / 28px);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42px / 36px);
+
+    margin-bottom: 50px;
+  }
+}
+
+.team__item {
+  margin-bottom: 30px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--background-color-header);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+
+    margin: 0;
+  }
+}
+
+.team__box-name {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
+}
+
+.team__title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__text {
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+}

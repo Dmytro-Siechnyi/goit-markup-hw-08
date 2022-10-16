@@ -1,0 +1,59 @@
+/**
+  |============================
+  | Блок 21
+  |============================
+*/
+
+// network
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.socials__link--color {
+  @extend .socials__link;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--background-color-header);
+  color: var(--color-icon);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__link--color-invers {
+  @extend .socials__link;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--backdrop-color-footer-network);
+  color: var(--button-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
